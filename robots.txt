@@ -1,1 +1,1 @@
-Sitemap: https://andrew.cmu.edu/user/alw1/sitemap.xml
+Sitemap: http://localhost:4000/user/alw1/sitemap.xml
