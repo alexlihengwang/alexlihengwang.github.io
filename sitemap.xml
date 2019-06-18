@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/user/alw1/cv</loc>
-<lastmod>2019-06-18T13:01:32-04:00</lastmod>
+<loc>http://localhost:4000/user/alw1/cv.html</loc>
+<lastmod>2019-06-18T13:26:41-04:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/user/alw1/</loc>
 <lastmod>2019-06-18T13:01:11-04:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/user/alw1/pubs_talks</loc>
-<lastmod>2019-06-18T13:00:46-04:00</lastmod>
+<loc>http://localhost:4000/user/alw1/pubs_talks.html</loc>
+<lastmod>2019-06-18T13:26:50-04:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/user/alw1/files/hardy_muckenhoupt_slides.pdf</loc>
