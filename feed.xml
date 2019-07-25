@@ -3,8 +3,8 @@
   <channel>
     <title>Alex L. Wang</title>
     <description>Academic website of Alex L. Wang</description>
-    <link>https://andrew.cmu.edu/user/alw1/</link>
-    <atom:link href="https://andrew.cmu.edu/user/alw1/feed.xml" rel="self" type="application/rss+xml" />
+    <link>https://cs.cmu.edu/~alw1/</link>
+    <atom:link href="https://cs.cmu.edu/~alw1/feed.xml" rel="self" type="application/rss+xml" />
     
   </channel>
 </rss>
