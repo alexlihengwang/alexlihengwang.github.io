@@ -1,6 +1,2 @@
-<<<<<<< HEAD
 ErrorDocument 404 /~alw1/404.html
-=======
-ErrorDocument 404 /user/alw1/404.html
->>>>>>> b865690a9d9a63e5c0f11f7fa290c57c5f8f16e0
 RedirectMatch 404 /\.git
