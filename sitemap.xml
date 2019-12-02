@@ -2,15 +2,19 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://cs.cmu.edu/~alw1/cv.html</loc>
+<lastmod>2019-11-22T23:13:21-05:00</lastmod>
 </url>
 <url>
 <loc>https://cs.cmu.edu/~alw1/</loc>
+<lastmod>2019-11-26T19:53:25-05:00</lastmod>
 </url>
 <url>
 <loc>https://cs.cmu.edu/~alw1/pubs.html</loc>
+<lastmod>2019-11-26T19:53:25-05:00</lastmod>
 </url>
 <url>
 <loc>https://cs.cmu.edu/~alw1/talks.html</loc>
+<lastmod>2019-11-22T23:13:21-05:00</lastmod>
 </url>
 <url>
 <loc>https://cs.cmu.edu/~alw1/files/gtrs_iccopt.pdf</loc>
