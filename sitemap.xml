@@ -2,11 +2,11 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://cs.cmu.edu/~alw1/</loc>
-<lastmod>2020-09-15T17:35:13-04:00</lastmod>
+<lastmod>2020-10-11T00:14:48-04:00</lastmod>
 </url>
 <url>
 <loc>https://cs.cmu.edu/~alw1/pubs.html</loc>
-<lastmod>2020-09-15T17:35:13-04:00</lastmod>
+<lastmod>2020-11-09T12:41:19-05:00</lastmod>
 </url>
 <url>
 <loc>https://cs.cmu.edu/~alw1/sdp_sos_cag.html</loc>
@@ -14,11 +14,15 @@
 </url>
 <url>
 <loc>https://cs.cmu.edu/~alw1/talks.html</loc>
-<lastmod>2020-10-09T15:24:00-04:00</lastmod>
+<lastmod>2020-10-11T00:14:48-04:00</lastmod>
 </url>
 <url>
 <loc>https://cs.cmu.edu/~alw1/teaching.html</loc>
 <lastmod>2020-08-26T16:28:43-04:00</lastmod>
+</url>
+<url>
+<loc>https://cs.cmu.edu/~alw1/files/geometric_informs.pdf</loc>
+<lastmod>2020-10-10T23:55:07-04:00</lastmod>
 </url>
 <url>
 <loc>https://cs.cmu.edu/~alw1/files/gtrs_iccopt.pdf</loc>
@@ -46,6 +50,6 @@
 </url>
 <url>
 <loc>https://cs.cmu.edu/~alw1/files/qcqp_pse.pdf</loc>
-<lastmod>2020-10-09T15:21:13-04:00</lastmod>
+<lastmod>2020-10-10T23:55:49-04:00</lastmod>
 </url>
 </urlset>
