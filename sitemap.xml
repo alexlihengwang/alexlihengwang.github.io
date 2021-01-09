@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>https://cs.cmu.edu/~alw1/blog/schur-sherman.html</loc>
+<lastmod>2021-01-09T16:06:45-05:00</lastmod>
+</url>
+<url>
+<loc>https://cs.cmu.edu/~alw1/blog/dines.html</loc>
+<lastmod>2021-01-09T16:06:45-05:00</lastmod>
+</url>
+<url>
+<loc>https://cs.cmu.edu/~alw1/blog/</loc>
+<lastmod>2021-01-09T16:06:45-05:00</lastmod>
+</url>
+<url>
 <loc>https://cs.cmu.edu/~alw1/</loc>
-<lastmod>2020-11-16T23:39:54-05:00</lastmod>
+<lastmod>2021-01-09T16:06:45-05:00</lastmod>
 </url>
 <url>
 <loc>https://cs.cmu.edu/~alw1/pubs.html</loc>
-<lastmod>2020-11-16T23:39:54-05:00</lastmod>
+<lastmod>2021-01-09T16:06:45-05:00</lastmod>
 </url>
 <url>
 <loc>https://cs.cmu.edu/~alw1/sdp_sos_cag.html</loc>
