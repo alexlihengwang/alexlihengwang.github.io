@@ -1,1 +1,1 @@
-Sitemap: https://cs.cmu.edu/~alw1/sitemap.xml
+Sitemap: https://alexlihengwang.github.io/sitemap.xml
