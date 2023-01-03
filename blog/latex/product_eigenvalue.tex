@@ -1,0 +1,82 @@
+\documentclass{article}
+\input{alex-fatma-packages}
+\input{alex-fatma-macros}
+\usepackage{graphicx}
+\graphicspath{ {../} }
+\usepackage[numbers,sort&compress,square,comma]{natbib}
+\title{Eigenvalues of products of symmetric matrices}
+\date{2022-01-28}
+\begin{document}
+
+Recall that $\Sym:\R^{n\by n}\to\S^n$ by $\Sym:A\mapsto \frac{A+A^\top}{2}$. Let $\norm{\cdot}$ denote the usual operator norm. For positive semidefinite matrices, this corresponds to the maximum eigenvalue.
+
+\begin{question}
+What values can $\lambda_{\min}\left(\Sym\left(\prod_{i=1}^m \frac{A_i}{\norm{A_i}}\right)\right)$ take if $A_i$ are positive semidefinite?
+\end{question}
+
+\rule{0.5\linewidth}{\linethickness}
+
+Note that by convexity and submultiplicativity, we have 
+\begin{align*}
+\norm{\Sym\left(\prod_i \frac{A_i}{\norm{A_i}}\right)}
+\leq \norm{\prod_i \frac{A_i}{\norm{A_i}}} \leq 1,
+\end{align*}
+so that
+\begin{align*}
+-I\preceq\Sym\left(\prod_i \frac{A_i}{\norm{A_i}}\right)\preceq I.
+\end{align*}
+Clearly, the latter bound is tight (e.g., take $A_1= \dots = A_m = I$).
+In this post, we will consider the first bound more carefully and show:
+\begin{proposition}
+Suppose $n\geq 2$.
+Let $A_1,\dots,A_m\in\S^n_+$. Then,
+\begin{align*}
+\Sym\left(\prod_i \frac{A_i}{\norm{A_i}}\right)\succeq - \cos\left(\frac{\pi}{m+1}\right)^{m+1}I.
+\end{align*}
+\end{proposition}
+For example, the above proposition implies that for any $A,B,C\succeq 0$, we have
+\begin{gather*}
+-\frac{1}{8}I\preceq\frac{\Sym(AB)}{\norm{A}_\textup{op}\norm{B}_\textup{op}} \preceq I,\\
+-\frac{1}{4}I\preceq\frac{\Sym(ABC)}{\norm{A}_\textup{op}\norm{B}_\textup{op}\norm{C}_\textup{op}} \preceq I.
+\end{gather*}
+
+\begin{proof}
+By homogeneity, it suffices to consider the case where $\norm{A_1}=\dots=\norm{A_m} \leq 1$.
+Let $A_1,\dots,A_m\in\S^n_+$ minimize
+\begin{align*}
+\Opt\coloneqq \min_{A_1,\dots,A_m}\set{\lambda_{\min}\left(\Sym\left(\prod_i A_i\right)\right):\, 0\preceq A_i \preceq I}.
+\end{align*}
+
+Without loss of generality, each $A_i$ is a rank-one matrix. Indeed, suppose $\rank(A_k)\geq 2$. Let $v_0\in\bS^{n-1}$ correspond to a minimum eigenvalue of $\Sym\left(\prod_i A_i\right)$. Let $w = (\prod_{i>k} A_i) v_0$ and set $\tilde A_k = \frac{(A_kw)(A_kw)^\top}{\norm{A_k w}^2}$.
+Note that $\tilde A_k w = \frac{w^\top A_k w}{w^\top (A_k)^2 w}A_kw$.
+Then
+\begin{align*}
+&\lambda_{\min}\left(\Sym\left(\prod_{i<k} A_i \cdot \tilde A_k \cdot\prod_{i>k} A_i \right)\right)\\
+&\qquad\leq v_0^\top \left(\prod_{i<k} A_i \cdot \tilde A_k \cdot\prod_{i>k} A_i \right) v_0\\
+&\qquad = \frac{w^\top A_k w}{w^\top (A_k)^2 w} \lambda_{\min}\left(\Sym\left(\prod_i A_i\right)\right)\\
+&\qquad \leq \Opt. 
+\end{align*}
+The last inequality follows from the assumption that $0\preceq A_k \preceq I$.
+
+We may thus write each $A_i=v_iv_i^\top$ for some $v_i\in\bS^{n-1}$. Equivalently, $v_0,v_1,\dots,v_m$ minimizes
+\begin{align*}
+\min_{v_0,v_1,\dots,v_m\in\bS^{n-1}} \ip{v_0,v_1}\ip{v_1,v_2}\dots\ip{v_m,v_0}.
+\end{align*}
+By negating $v_i$ if necessary, we may assume that $\ip{v_0, v_1}, \dots, \ip{v_{m-1}, v_m} > 0$ and $\ip{v_m, v_0} <0$.
+By optimality and our assumptions on the signs, we have that for each $i = 1,\dots, m-1$,
+\begin{align*}
+v_i = \frac{v_{i-1} + v_{i+1}}{\norm{v_{i-1}+ v_{i+1}}}.
+\end{align*}
+We deduce that $v_1,\dots, v_{m-1} \in \spann\set{v_0, v_m}$ so that without loss of generality $v_0,v_1,\dots, v_m \in\bS^{1}$.
+In particular, we may parameterize $v_i = (\cos(\theta_0 + i \eta), \sin(\theta_0 + i \eta))$ for some $\theta_0$ and $\eta$. Then,
+\begin{align*}
+\Opt = \min_{\eta\in\R} \cos(\eta)^n\cos(n\eta).
+\end{align*}
+This expression is minimized at $\eta = \frac{\pi}{n+1}$ where $\cos(n\eta) = -\cos(\eta)$.
+\end{proof}
+
+% \begin{remark}
+% The same proof holds with minor modifications in the Hermitian setting.
+% \end{remark}
+
+\end{document}

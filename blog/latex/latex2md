@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+BASEDIR=$(dirname "${0}")
+cd "$BASEDIR"
+
+read -e -p "file name: " fullfile;
+
+if [ -z "$fullfile" ]; then
+	exit
+fi
+
+filename="${fullfile%.*}"
+
+if [ ! -f "$filename.tex" ]; then
+	exit
+fi
+
+sublime ./
+pandoc "$filename.tex" -f latex -t markdown_mmd-raw_attribute -N --template=template.md --csl=custom.csl --lua-filter=sidenote_lua.lua --citeproc --bibliography=bib.bib -M link-citations='True' -o "../_posts/0001-01-01-$filename.md"
+fswatch -o "$filename.tex" | xargs -o -n1 -I{} pandoc "$filename.tex" -f latex -t markdown_mmd-raw_attribute -N --template=template.md --csl=custom.csl --lua-filter=sidenote_lua.lua --citeproc --bibliography=bib.bib -M link-citations='True' -o "../_posts/0001-01-01-$filename.md"
+# pandoc "$filename.tex" -f latex -t markdown_mmd-raw_attribute -N --template=template.md --csl=custom.csl --lua-filter=sidenote_lua.lua -o "../_posts/0001-01-01-$filename.md"
+# fswatch -o "$filename.tex" | xargs -o -n1 -I{} pandoc "$filename.tex" -f latex -t markdown_mmd-raw_attribute -N --template=template.md --csl=custom.csl --lua-filter=sidenote_lua.lua -o "../_posts/0001-01-01-$filename.md"
