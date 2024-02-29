@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+        
+            MGMT 690 – Spring 2024
+        
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all">
+    <meta name="author" content="Alex L. Wang">
+    <meta name="keywords" content="Alex L. Wang, Alex Liheng Wang, Alex Wang, Optimization, Semidefinite program, Algorithms, CMU, Carnegie Mellon, CWI, Centrum Wiskunde Informatica, Purdue University, Krannert">
+    <link rel="canonical" href="https://alexlihengwang.github.io/teaching/mgmt_690_sp24.html">
+
+    <link rel="icon" href="data:,">
+
+    <!-- Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Merriweather:700,400' rel='stylesheet' type='text/css'>
+
+    
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/pixyll.css?202402290029" type="text/css">
+</head>
+
+<body>
+  <div class="mb4">
+  	
+  		<div class="mb2"></div>
+  	
+
+    <div class="p2" role="main">
+        
+            <div class="measure course-webpage">
+                <div>
+  <header>
+    <h1 class="h1">MGMT 690 – Spring 2024</h1>
+  </header>
+  <article>
+  <h1 id="convex-optimization">Convex optimization</h1>
+
+<ul>
+  <li><strong>Instructor</strong>: <a href="/">Alex L. Wang</a>, Krannert 463, wang5984@purdue.edu</li>
+  <li><strong>Lectures</strong>: TuTh 3:30-5pm RAWL 2077</li>
+  <li><strong>Gradescope</strong>: <a href="https://www.gradescope.com/courses/647672">Link</a></li>
+  <li><strong>Piazza</strong>: <a href="https://piazza.com/class/lt6ony0d6y7ju">Link</a></li>
+  <li><strong>Office hours</strong>: By appointment</li>
+  <li><strong>Notes</strong>: <a href="mgmt_690/files/main.pdf">Draft</a> - These notes will be updated throughout the semester</li>
+</ul>
+
+<div class="boxed-tertiary">
+<p>Course policies can be found <a href="/teaching/mgmt_690_sp24_policies.html">here</a></p>
+</div>
+
+<hr />
+
+<h2 id="schedule">Schedule</h2>
+
+<table style="width: 100%">
+  
+    
+        
+        <tr><td colspan="4">
+      
+<p><strong class="week-row">Linear algebra and convex analysis background</strong></p>
+
+
+    </td></tr>
+        
+    
+  
+    
+    <tr>
+      
+        <td>
+      <!--- Lecture 1 -->
+<p>3/5</p>
+
+    </td>
+      
+        <td>
+      <p><strong class="label-lecture">Lec 1</strong></p>
+
+    </td>
+      
+        <td>
+      <p>Linear algebra review</p>
+
+    </td>
+      
+        <td>
+      
+
+    </td>
+      
+    </tr>
+    
+  
+    
+    <tr>
+      
+        <td>
+      <!--- Lecture 2 -->
+<p>3/7</p>
+
+    </td>
+      
+        <td>
+      <p><strong class="label-lecture">Lec 2</strong></p>
+
+    </td>
+      
+        <td>
+      <p>Elementary convex analysis I</p>
+
+    </td>
+      
+        <td>
+      
+
+    </td>
+      
+    </tr>
+    
+  
+    
+    <tr>
+      
+        <td>
+      
+<p>3/12</p>
+
+    </td>
+      
+        <td>
+      
+
+    </td>
+      
+        <td>
+      <p>Spring break no classes</p>
+
+    </td>
+      
+        <td>
+      
+
+    </td>
+      
+    </tr>
+    
+  
+    
+    <tr>
+      
+        <td>
+      
+<p>3/14</p>
+
+    </td>
+      
+        <td>
+      
+
+    </td>
+      
+        <td>
+      <p>Spring break no classes</p>
+
+    </td>
+      
+        <td>
+      
+
+    </td>
+      
+    </tr>
+    
+  
+    
+    <tr>
+      
+        <td>
+      <!--- Lecture 3 -->
+<p>3/19</p>
+
+    </td>
+      
+        <td>
+      <p><strong class="label-lecture">Lec 3</strong></p>
+
+    </td>
+      
+        <td>
+      <p>Elementary convex analysis II</p>
+
+    </td>
+      
+        <td>
+      
+
+    </td>
+      
+    </tr>
+    
+  
+    
+        
+        <tr><td colspan="4">
+      <p><strong class="week-row">Conic programming</strong></p>
+
+
+    </td></tr>
+        
+    
+  
+    
+    <tr>
+      
+        <td>
+      <!--- Lecture 4 -->
+<p>3/21</p>
+
+    </td>
+      
+        <td>
+      <p><strong class="label-lecture">Lec 4</strong></p>
+
+    </td>
+      
+        <td>
+      <p>Conic programming I</p>
+
+    </td>
+      
+        <td>
+      
+
+    </td>
+      
+    </tr>
+    
+  
+    
+    <tr>
+      
+        <td>
+      <!--- HW1 -->
+<p>3/24</p>
+
+    </td>
+      
+        <td>
+      <p><strong class="label-hw">Pset 1 Due</strong></p>
+
+    </td>
+      
+        <td>
+      
+<p><a href="mgmt_690/files/pset1.pdf">Pset 1</a></p>
+
+    </td>
+      
+        <td>
+      
+
+    </td>
+      
+    </tr>
+    
+  
+    
+    <tr>
+      
+        <td>
+      <!--- Lecture 5 -->
+<p>3/26</p>
+
+    </td>
+      
+        <td>
+      <p><strong class="label-lecture">Lec 5</strong></p>
+
+    </td>
+      
+        <td>
+      <p>Conic programming II</p>
+
+    </td>
+      
+        <td>
+      
+
+    </td>
+      
+    </tr>
+    
+  
+    
+        
+        <tr><td colspan="4">
+      <p><strong class="week-row">Conic programming applications</strong></p>
+
+
+    </td></tr>
+        
+    
+  
+    
+    <tr>
+      
+        <td>
+      <!--- Lecture 6 -->
+<p>3/28</p>
+
+    </td>
+      
+        <td>
+      <p><strong class="label-lecture">Lec 6</strong></p>
+
+    </td>
+      
+        <td>
+      <p>SOCP representability</p>
+
+    </td>
+      
+        <td>
+      
+
+    </td>
+      
+    </tr>
+    
+  
+    
+    <tr>
+      
+        <td>
+      <!--- Lecture 7 -->
+<p>4/2</p>
+
+    </td>
+      
+        <td>
+      <p><strong class="label-lecture">Lec 7</strong></p>
+
+    </td>
+      
+        <td>
+      <p>SDP representability</p>
+
+    </td>
+      
+        <td>
+      
+
+    </td>
+      
+    </tr>
+    
+  
+    
+    <tr>
+      
+        <td>
+      <!--- Lecture 8 -->
+<p>4/4</p>
+
+    </td>
+      
+        <td>
+      <p><strong class="label-lecture">Lec 8</strong></p>
+
+    </td>
+      
+        <td>
+      <p>SDP relaxations of intractable problems</p>
+
+    </td>
+      
+        <td>
+      
+
+    </td>
+      
+    </tr>
+    
+  
+    
+    <tr>
+      
+        <td>
+      <!--- HW2 -->
+<p>4/7</p>
+
+    </td>
+      
+        <td>
+      <p><strong class="label-hw">Pset 2 Due</strong></p>
+
+    </td>
+      
+        <td>
+      
+
+    </td>
+      
+        <td>
+      
+
+    </td>
+      
+    </tr>
+    
+  
+    
+        
+        <tr><td colspan="4">
+      <p><strong class="week-row">First-order methods for smooth minimization</strong></p>
+
+
+    </td></tr>
+        
+    
+  
+    
+    <tr>
+      
+        <td>
+      <!--- Lecture 10 -->
+<p>4/9</p>
+
+    </td>
+      
+        <td>
+      <p><strong class="label-lecture">Lec 10</strong></p>
+
+    </td>
+      
+        <td>
+      <p>Gradient descent for smooth/strongly convex minimization</p>
+
+    </td>
+      
+        <td>
+      
+
+    </td>
+      
+    </tr>
+    
+  
+    
+    <tr>
+      
+        <td>
+      <!--- Lecture 11 -->
+<p>4/11</p>
+
+    </td>
+      
+        <td>
+      <p><strong class="label-lecture">Lec 11</strong></p>
+
+    </td>
+      
+        <td>
+      <p>Oracle lower bounds</p>
+
+    </td>
+      
+        <td>
+      
+
+    </td>
+      
+    </tr>
+    
+  
+    
+    <tr>
+      
+        <td>
+      <!--- Lecture 12 -->
+<p>4/16</p>
+
+    </td>
+      
+        <td>
+      <p><strong class="label-lecture">Lec 12</strong></p>
+
+    </td>
+      
+        <td>
+      <p>Accelerated methods</p>
+
+    </td>
+      
+        <td>
+      
+
+    </td>
+      
+    </tr>
+    
+  
+    
+    <tr>
+      
+        <td>
+      <!--- Lecture 13 -->
+<p>4/18</p>
+
+    </td>
+      
+        <td>
+      <p><strong class="label-lecture">Lec 13</strong></p>
+
+    </td>
+      
+        <td>
+      <p>Performance estimation programming</p>
+
+    </td>
+      
+        <td>
+      
+
+    </td>
+      
+    </tr>
+    
+  
+    
+    <tr>
+      
+        <td>
+      <!--- HW3 -->
+<p>4/21</p>
+
+    </td>
+      
+        <td>
+      <p><strong class="label-hw">Pset 3 Due</strong></p>
+
+    </td>
+      
+        <td>
+      
+
+    </td>
+      
+        <td>
+      
+
+    </td>
+      
+    </tr>
+    
+  
+    
+        
+        <tr><td colspan="4">
+      <p><strong class="week-row">Other topics in first-order methods</strong></p>
+
+
+    </td></tr>
+        
+    
+  
+    
+    <tr>
+      
+        <td>
+      <!--- Lecture 14 -->
+<p>4/23</p>
+
+    </td>
+      
+        <td>
+      <p><strong class="label-lecture">Lec 15</strong></p>
+
+    </td>
+      
+        <td>
+      <p>Composite minimization and acceleration via growth rates</p>
+
+    </td>
+      
+        <td>
+      
+
+    </td>
+      
+    </tr>
+    
+  
+    
+    <tr>
+      
+        <td>
+      <!--- Lecture 15 -->
+<p>4/25</p>
+
+    </td>
+      
+        <td>
+      <p><strong class="label-lecture">Lec 16</strong></p>
+
+    </td>
+      
+        <td>
+      <p>Mirror descent</p>
+
+    </td>
+      
+        <td>
+      
+
+    </td>
+      
+    </tr>
+    
+  
+    
+    <tr>
+      
+        <td>
+      <!--- HW4 -->
+<p>5/2</p>
+
+    </td>
+      
+        <td>
+      <p><strong class="label-hw">Pset 4 Due</strong></p>
+
+    </td>
+      
+        <td>
+      
+
+    </td>
+      
+        <td>
+      
+
+    </td>
+      
+    </tr>
+    
+  
+</table>
+
+  </article>
+  <div class="mt3">
+  <code class="last-updated px1">
+		Last updated Feb 29, 2024
+	</code>
+  </div>
+</div>
+            </div>
+        
+    </div>
+  </div>
+
+  
+</body>
+</html>
