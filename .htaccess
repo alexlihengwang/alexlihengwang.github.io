@@ -1,4 +1,4 @@
-ErrorDocument 404 /~alw1/index.html
+ErrorDocument 404 /index.html
 RedirectMatch 404 /\.git
 
 RewriteEngine On
